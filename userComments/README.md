@@ -1,7 +1,7 @@
 # Microservice for Users
 
 <p>
-This microservice performs the action of recording the comments of the users of the cinema platform. It has an interface where it calls this microservice through a defined URL. The microservice performs this action through an API endpoint and stores it in a cloud-hosted Postgres database. The use of this microservice will depend on the user's role.
+This microservice performs the action of recording the comments of the users of the cinema platform. It has an interface where it calls this microservice through a defined URL. The microservice performs this action through an API endpoint and stores it in a cloud-hosted MongoDB database. The use of this microservice will depend on the user's role.
 </p>
 
 
@@ -20,11 +20,7 @@ The project requires Node.js and npm installed on your system. To install and ru
 ###### Configure environment variables:
 Create an `.env` file in the root of the project and set the following environment variables:
 
-- `DB_USER=your_postgresql_user`
-- `DB_HOST=your_postgresql_host`
-- `DB_DATABASE=your_postgresql_database`
-- `DB_PASSWORD=your_postgresql_password`
-- `DB_PORT=server_port`
+- `URL=your_mongodb_url`
 
 
 ###### Execute the server:
@@ -40,7 +36,7 @@ To use the microservice, follow the steps above to install and run the project. 
 
 #### Technologies used for this microservice
 - **Node.js** with the Express.js framework for the backend server.
-- **PostgreSQL** for the database.
+- **MongoDB** for the database.
 - **Swagger** for API documentation.
 - **Docker** for optional containerization.
 

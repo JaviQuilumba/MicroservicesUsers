@@ -1,7 +1,7 @@
 # Microservice for Create Movies
 
 <p>
-This microservice performs the action of registering users who want to access the cinema platform. It has an interface where it calls this microservice through a defined URL. The microservice performs this action through an API endpoint and stores it in a cloud-hosted Postgres database. The use of this microservice will depend on the user's role.
+This microservice performs the action of registering users who want to access the cinema platform. It has an interface where it calls this microservice through a defined URL. The microservice performs this action through an API endpoint and stores it in a cloud-hosted Postgres database. 
 </p>
 
 
