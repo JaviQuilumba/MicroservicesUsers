@@ -38,9 +38,10 @@ To use the microservice, follow the steps above to install and run the project, 
 
 `<link>` : <https://github.com>
 
-#### Technologies used for this microservice
+#### Technologies used for these microservices
 - **Node.js** with the Express.js framework for the backend server.
 - **PostgreSQL** for the database.
+- **MongoDB** for the database.
 - **Swagger** for API documentation.
 - **Docker** for optional containerization.
 
