@@ -1,4 +1,4 @@
-# Microservice for Create Movies
+# Microservice for Register Users
 
 <p>
 This microservice performs the action of registering users who want to access the cinema platform. It has an interface where it calls this microservice through a defined URL. The microservice performs this action through an API endpoint and stores it in a cloud-hosted Postgres database. 
@@ -36,7 +36,7 @@ To use the microservice, follow the steps above to install and run the project. 
 </p>
 
 
-`<link>` : <https://github.com>
+`Frontend Cinema Platform` : <https://github.com/JaviQuilumba/CinemaPlatform.git>
 
 #### Technologies used for this microservice
 - **Node.js** with the Express.js framework for the backend server.

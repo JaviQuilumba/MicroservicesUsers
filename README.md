@@ -1,4 +1,4 @@
-# Microservices for Cinema Theaters
+# Microservices for Users
 
 <p>
 These microservices are designed to fulfill their specified function within a cinema platform, each one will be made every time a call is made at the end through the defined URLs, these three microservices are mainly focused on managing user information through their respective API endpoints which are connected to a postgres database that is hosted in the cloud.
@@ -36,7 +36,7 @@ To use the microservice, follow the steps above to install and run the project, 
 </p>
 
 
-`<link>` : <https://github.com>
+`Frontend Cinema Platform` : <https://github.com/JaviQuilumba/CinemaPlatform.git>
 
 #### Technologies used for these microservices
 - **Node.js** with the Express.js framework for the backend server.
