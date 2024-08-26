@@ -9,7 +9,7 @@ const app = express();
 const port = 3001;
 
 app.use(cors({
-  origin: 'http://localhost:3000'
+  origin: 'https://cinema-platform-743n6.ondigitalocean.app'
 }));
 
 app.use(bodyParser.json());
