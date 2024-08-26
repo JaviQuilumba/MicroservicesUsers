@@ -40,7 +40,6 @@ const swaggerOptions = {
 
 const swaggerDocs = swaggerJSDoc(swaggerOptions);
 app.use('/swaggerComments', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
-
 app.use('/api', commentRoutes);
 
 app.listen(port, () => {

@@ -16,6 +16,7 @@ app.use(bodyParser.json());
 app.use('/api/auth', authRoutes);
 app.use('/swaggerLogin', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
+
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });

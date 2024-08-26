@@ -3,17 +3,17 @@ name: Deploy Microservice to DigitalOcean Droplet
 on:
   push:
     paths:
-      - 'login/**'
+      - 'registerUser/**'
     branches:
       - main
 
 env:
   DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
-  DOCKERHUB_IMAGE: login
+  DOCKERHUB_IMAGE: registerUser
   DROPLET_IP: ${{ secrets.DROPLET_IP }}
   DROPLET_USER: root
   DROPLET_PASSWORD: ${{ secrets.DROPLET_PASSWORD }}
-  DOCKER_PORT: 3001
+  DOCKER_PORT: 3002
 
 jobs:
   deploy:
@@ -32,7 +32,7 @@ jobs:
 
       - name: Build, tag, and push Docker image
         run: |
-          docker build -t ${{ env.DOCKERHUB_USERNAME }}/${{ env.DOCKERHUB_IMAGE }}:latest ./login
+          docker build -t ${{ env.DOCKERHUB_USERNAME }}/${{ env.DOCKERHUB_IMAGE }}:latest ./registerUser
           docker push ${{ env.DOCKERHUB_USERNAME }}/${{ env.DOCKERHUB_IMAGE }}:latest
 
       - name: Install SSHpass (para autenticación con contraseña)
